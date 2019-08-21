@@ -1,0 +1,15 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{EFFB04A2-85BF-461E-8857-EAAB8A615291}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>01a58561-e3f6-44a8-809a-f031cf1b33d2</string>
+      <string>85644140-0a07-483b-b4eb-111bea8c8324</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution DesktopApp_Test[RxDemoApp[]]]&#xD;&#xA;Solution DesktopApp_Test\RxDemoApp\RxDemoApp.rxtst&#xD;&#xA;Solution DesktopApp_Test" />
+  <StartupProject value="{EFFB04A2-85BF-461E-8857-EAAB8A615291}" />
+</Properties>

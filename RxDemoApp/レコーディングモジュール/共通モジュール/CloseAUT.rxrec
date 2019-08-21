@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d94843ea-866b-4952-9636-71f00d435664"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		CloseAUT
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="RxDemoApp.レコーディングモジュール.共通モジュール">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="6bbefc37-234c-4adb-9ce6-ad9d8f41918a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b804ed16-e906-4cd3-a0e7-13fdf80e772b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='RxDemoApp']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ddbf4f0b-a7b2-4207-9bed-0937cb612a05"
+	name="RxDemoAppRepository"
+	relativepath="..\..\RxDemoAppRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="RxDemoAppRepository"
+		namespace="RxDemoApp">
+		</codegen>
+		<rootfolder
+		id="ffc03627-3993-402b-84ae-603084ab166f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

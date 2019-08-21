@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{EFFB04A2-85BF-461E-8857-EAAB8A615291}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RxDemoApp</RootNamespace>
+    <AssemblyName>RxDemoApp</AssemblyName>
+    <RanorexVersion>8.3</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>885ff89a-6f04-483b-9953-a91c97c8cfc3</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>0b54bc3e-b507-4ec7-ba92-f0c991b2fa8f</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>09376fb0-a0e8-4a9a-af10-5988c86f9e5e</id>
+    </Compile>
+    <Compile Include="レコーディングモジュール\Introduction\名前の登録.cs">
+      <DependentUpon>名前の登録.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4d41630a-849c-41c4-b316-ef2b6248ee4a</id>
+      <BoundTo>fe530694-c0b7-4be4-bca2-1be03f5e6106</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\Introduction\名前の登録.UserCode.cs">
+      <DependentUpon>名前の登録.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>461cb31f-9767-412b-bfcf-a12fec24863b</id>
+      <BoundTo>fe530694-c0b7-4be4-bca2-1be03f5e6106</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\Introduction\登録画面の検証.cs">
+      <DependentUpon>登録画面の検証.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e177d765-ce92-4d63-9d6a-a5d42f2cb014</id>
+      <BoundTo>63a09d8f-9307-4c24-a688-160969502fb0</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\Introduction\登録画面の検証.UserCode.cs">
+      <DependentUpon>登録画面の検証.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f71bdc6c-f91c-4491-8c50-23815bf4cd8d</id>
+      <BoundTo>63a09d8f-9307-4c24-a688-160969502fb0</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\エントリーの削除.cs">
+      <DependentUpon>エントリーの削除.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>93c2b2b9-0410-46f3-bba4-5481a1bc21e0</id>
+      <BoundTo>5c28451b-4865-4d7b-a7e7-692ebaaf8714</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\エントリーの削除.UserCode.cs">
+      <DependentUpon>エントリーの削除.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e3975f9-c87f-4352-af29-b5e23e7162c2</id>
+      <BoundTo>5c28451b-4865-4d7b-a7e7-692ebaaf8714</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\エントリーの登録.cs">
+      <DependentUpon>エントリーの登録.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>207a6033-90d1-46b0-a43a-e9fa12c8a81d</id>
+      <BoundTo>d1bef571-a924-4519-8370-217425d3f777</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\エントリーの登録.UserCode.cs">
+      <DependentUpon>エントリーの登録.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3cca7a7c-57d9-44db-8131-1caab751dbd2</id>
+      <BoundTo>d1bef571-a924-4519-8370-217425d3f777</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\データベース画面の表示.cs">
+      <DependentUpon>データベース画面の表示.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12b13c3b-158d-4ed6-8150-b9fb46da6738</id>
+      <BoundTo>6e5ad28c-a106-4ab3-8a4b-93ac64bcadd5</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\TestDatabase\データベース画面の表示.UserCode.cs">
+      <DependentUpon>データベース画面の表示.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f5a3b1c-7667-4cf2-9dda-35eed838539a</id>
+      <BoundTo>6e5ad28c-a106-4ab3-8a4b-93ac64bcadd5</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\共通モジュール\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e74dd077-11b7-489d-9d9c-588237cb4961</id>
+      <BoundTo>b854d9bf-7404-4dd8-8e57-93cafa577c51</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\共通モジュール\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32f95aa2-5812-4c91-be6d-80735c552959</id>
+      <BoundTo>b854d9bf-7404-4dd8-8e57-93cafa577c51</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\共通モジュール\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>422e70d3-eb0e-44e7-9a7b-48a5c7694ef6</id>
+      <BoundTo>0d74519c-3abb-4b91-96af-5cd3573cb57a</BoundTo>
+    </Compile>
+    <Compile Include="レコーディングモジュール\共通モジュール\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2770779f-1ed9-4a7a-a345-cd3eb7e0c0a0</id>
+      <BoundTo>0d74519c-3abb-4b91-96af-5cd3573cb57a</BoundTo>
+    </Compile>
+    <Compile Include="RxDemoAppRepository.cs">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <DependentUpon>RxDemoAppRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>d829d815-2164-4be1-a588-4eff8f705133</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>185c9c2f-7151-4fa4-a1a8-888a9b68b51b</id>
+    </None>
+    <None Include="レコーディングモジュール\Introduction\名前の登録.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>fe530694-c0b7-4be4-bca2-1be03f5e6106</id>
+      <recordtableid>a710d971-275b-4530-8c12-d13a6aee11f9</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\Introduction\登録画面の検証.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>63a09d8f-9307-4c24-a688-160969502fb0</id>
+      <recordtableid>1f2d0e44-ff32-4420-a7c2-405703d7b1a0</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\TestDatabase\エントリーの削除.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>5c28451b-4865-4d7b-a7e7-692ebaaf8714</id>
+      <recordtableid>4568afc3-fcf6-4e26-a9f5-9a91299aef89</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\TestDatabase\エントリーの登録.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>d1bef571-a924-4519-8370-217425d3f777</id>
+      <recordtableid>c36c2649-b97f-4570-8dc3-41e020c65ff4</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\TestDatabase\データベース画面の表示.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>6e5ad28c-a106-4ab3-8a4b-93ac64bcadd5</id>
+      <recordtableid>b151f15d-b6b0-49ea-a07b-3347e8e06883</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\共通モジュール\CloseAUT.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>b854d9bf-7404-4dd8-8e57-93cafa577c51</id>
+      <recordtableid>d94843ea-866b-4952-9636-71f00d435664</recordtableid>
+    </None>
+    <None Include="レコーディングモジュール\共通モジュール\StartAUT.rxrec">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <id>0d74519c-3abb-4b91-96af-5cd3573cb57a</id>
+      <recordtableid>895bce30-5de8-47fa-a9c4-4f115710b3b6</recordtableid>
+    </None>
+    <None Include="RxDemoAppRepository.rximg">
+      <BoundTo>885ff89a-6f04-483b-9953-a91c97c8cfc3</BoundTo>
+      <DependentUpon>RxDemoAppRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c8e70cf2-245d-4e36-b2ab-d88fe895cd3b</id>
+    </None>
+    <None Include="RxDemoAppRepository.rxrep">
+      <id>885ff89a-6f04-483b-9953-a91c97c8cfc3</id>
+      <repoid>ddbf4f0b-a7b2-4207-9bed-0937cb612a05</repoid>
+      <reporootid>ffc03627-3993-402b-84ae-603084ab166f</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RxDemoApp.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d3b72ffc-8249-400d-9d89-7cbf2d7566fd</id>
+    </Content>
+    <Content Include="RxDemoApp.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bb75a740-3a28-4d7c-b1bb-22e20c0f29fe</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="レコーディングモジュール">
+      <id>01a58561-e3f6-44a8-809a-f031cf1b33d2</id>
+    </Folder>
+    <Folder Include="レコーディングモジュール\TestDatabase">
+      <id>22357913-ade4-4e9c-90fa-eaa3fe7a6148</id>
+    </Folder>
+    <Folder Include="レコーディングモジュール\共通モジュール">
+      <id>85644140-0a07-483b-b4eb-111bea8c8324</id>
+    </Folder>
+    <Folder Include="レコーディングモジュール\Introduction">
+      <id>e951a4dc-f0c0-4981-81b3-3f4360672281</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

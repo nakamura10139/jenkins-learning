@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.3">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testmodule
+			id="708077f8-434b-417f-8cba-2b0c69b2b9b4"
+			name="データベース画面の表示"
+			ref="b151f15d-b6b0-49ea-a07b-3347e8e06883"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7a2be921-068c-4a24-915b-60df205447b0"
+			name="エントリーの登録"
+			ref="c36c2649-b97f-4570-8dc3-41e020c65ff4"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="7ac1e398-055f-4533-a26b-25281a7ce044"
+			name="画面の表示＋登録">
+			</modulegroupdef>
+			<modulegroups
+			id="93806d42-8cc7-4c90-a091-7c6bacbc6ed3"
+			name="RxDemoApp">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="93806d42-8cc7-4c90-a091-7c6bacbc6ed3"
+			name="RxDemoApp">
+				<modulegroupdef
+				id="7ac1e398-055f-4533-a26b-25281a7ce044"
+				name="画面の表示＋登録">
+					<testmodule
+					id="7a2be921-068c-4a24-915b-60df205447b0"
+					name="エントリーの登録">
+					</testmodule>
+					<testmodule
+					id="708077f8-434b-417f-8cba-2b0c69b2b9b4"
+					name="データベース画面の表示">
+					</testmodule>
+				</modulegroupdef>
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>
